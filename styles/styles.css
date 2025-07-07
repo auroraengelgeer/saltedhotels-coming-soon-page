@@ -7,6 +7,7 @@
         3.2 Other
     4. Areas
         4.1 Coming Soon page
+        4.2 Form
     5. Media Queries
 ////////////////////////*/
 
@@ -38,11 +39,18 @@
 }
 /* ------------------------------- 2. Typography ----------------------------------- */
 
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Arial, serif;
+}
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
-
 
 
 /* --------------- 3.2 Other --------------------------- */
@@ -53,7 +61,6 @@
 /* --------------- 4.1 Coming Soon page --------------------------- */
 
 body {
-    font-family: 'Montserrat', sans-serif;
     background: url("../assets/beach background 3.jpg") no-repeat center center/cover;
     color: white;
     height: 100vh;
@@ -70,7 +77,6 @@ body {
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
     font-size: 6rem;
     margin-bottom: 2rem;
 }
@@ -121,9 +127,12 @@ h1 {
     }
 }
 
+/* --------------- 4.2 Form --------------------------- */
+
+
 .form {
     animation: fadeInDelayedForm 1.5s ease-out forwards;
-    animation-delay: 2s; /* Langer delay dan "Coming soon" */
+    animation-delay: 2s; /* Langere delay dan "Coming soon" */
     opacity: 0;
     margin-top: 3rem;
     max-width: 500px;
