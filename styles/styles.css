@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 /* --------------- 4.1 Coming Soon page --------------------------- */
 
 body {
-    background: url("../assets/beach background 3.jpg") no-repeat center center/cover;
+    background: url("../assets/beach background.jpg") no-repeat center center/cover;
     color: white;
     height: 100vh;
     display: flex;
@@ -283,6 +283,7 @@ button[type="submit"]:hover {
     body {
         /*background: url("../assets/beach-background-mobile.jpg") no-repeat center center/cover; !* Optioneel: aangepaste mobiele achtergrond *!*/
         padding-top: 40px;
+        align-items: flex-start;
     }
 
     .container {
