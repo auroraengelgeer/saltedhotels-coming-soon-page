@@ -80,7 +80,7 @@ body {
 
 .container {
     background-color: rgba(112, 169, 161, 0.3);
-    padding: 120px;
+    padding: 80px;
     border-radius: 16px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* voor Safari */
