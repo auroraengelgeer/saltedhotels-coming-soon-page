@@ -66,8 +66,6 @@ body {
     color: white;
     margin: 0; /* witruimte weg */
     min-height: 100vh; /* zorg dat body minimaal schermhoogte heeft */
-    /* display:flex en centreren van content halen we hier weg */
-    font-family: 'Montserrat', Arial, sans-serif; /* optie, staat al elders */
 }
 
 .page-wrapper {
