@@ -272,7 +272,6 @@ button[type="submit"]:hover {
 @media (max-width: 480px) {
     body {
         /*background: url("../assets/beach-background-mobile.jpg") no-repeat center center/cover; !* Optioneel: aangepaste mobiele achtergrond *!*/
-        align-items: center; /* Content bovenaan op kleine schermen */
         padding-top: 40px;
     }
 
