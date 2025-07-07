@@ -1,8 +1,56 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Coming Soon page
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    /* background colors */
+    --color-bg-1: #0B2027;
+    --color-bg-2: #40798C;
+    --color-bg-3: #70A9A1;
+
+    /* accent colors */
+    --color-button-1: #A6C9C3;
+    --color-button-2: #579BB2;
+    --color-button-3: #70A9A1;
+
+    /* text colors */
+    --color-text-black: #0B2027;
+    --color-text-taupe: #CFD7C7;
+    --color-text-sand: #F6F1D1;
+    --color-text-white: #D9E8E5;
+
+}
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+
+
+/* --------------- 3.2 Other --------------------------- */
+
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Coming Soon page --------------------------- */
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -16,15 +64,15 @@ body {
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px;
+    background-color: rgba(112, 169, 161, 0.5);
+    padding: 120px;
     border-radius: 16px;
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 6rem;
+    margin-bottom: 2rem;
 }
 
 p {
@@ -34,7 +82,115 @@ p {
 
 .soon {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: 2rem;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: fadeIn 1.5s ease-out forwards;
+    opacity: 0; /* Start onzichtbaar */
+}
+
+.soon {
+    animation: fadeInDelayed 1.5s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+@keyframes fadeInDelayed {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form {
+    animation: fadeInDelayedForm 1.5s ease-out forwards;
+    animation-delay: 2s; /* Langer delay dan "Coming soon" */
+    opacity: 0;
+    margin-top: 3rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes fadeInDelayedForm {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--color-text-white);
+    border-radius: 16px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: var(--color-button-2);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+button[type="submit"] {
+    background-color: var(--color-button-1);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-button-3);
+    transform: translateY(-2px);
+}
+
+/* ------------------------------- 5. Media Queries -------------------------------- */

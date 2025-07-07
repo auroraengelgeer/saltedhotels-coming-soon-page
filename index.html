@@ -11,7 +11,20 @@
 <div class="container">
     <h1>Salted Hotels</h1>
     <p>A new travel experience is on the horizon.</p>
-    <p class="soon">Launching soon</p>
+    <p class="soon">Coming soon</p>
+    <form class="form" action="/submit" method="POST">
+        <label for="email">
+            Want to be a part of our exclusive opening?
+            <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="your@email.com"
+            >
+        </label>
+        <button type="submit">Send</button>
+    </form>
 </div>
 </body>
 </html>
