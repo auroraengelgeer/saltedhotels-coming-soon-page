@@ -194,3 +194,66 @@ button[type="submit"]:hover {
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+/* Tablet (768px en smaller) */
+@media (max-width: 768px) {
+    .container {
+        padding: 80px 40px; /* Kleinere padding */
+        margin: 0 20px; /* Zorg voor ademruimte aan de zijkanten */
+    }
+
+    h1 {
+        font-size: 3rem; /* Kleinere hoofdtitel */
+    }
+
+    .soon {
+        font-size: 1.3rem;
+    }
+
+    .form {
+        max-width: 100%; /* Volledige breedte benutten */
+    }
+}
+
+/* Mobiel (480px en smaller) */
+@media (max-width: 480px) {
+    body {
+        /*background: url("../assets/beach-background-mobile.jpg") no-repeat center center/cover; !* Optioneel: aangepaste mobiele achtergrond *!*/
+        align-items: flex-start; /* Content bovenaan op kleine schermen */
+        padding-top: 40px;
+    }
+
+    .container {
+        padding: 40px 20px;
+        width: 90%; /* Smallere container */
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1rem; /* Kleinere labeltekst */
+    }
+
+    input[type="email"],
+    button[type="submit"] {
+        padding: 10px 15px; /* Compactere inputs */
+    }
+}
+
+/* Extra klein mobiel (bv. iPhone SE) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .soon {
+        font-size: 1.1rem;
+    }
+}
