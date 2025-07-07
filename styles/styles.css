@@ -1,5 +1,4 @@
-/*////////////////////////
-    Table of Contents
+/*///////////////////////    Table of Contents
     1. Global Styles
     2. Typography
     3. Layout
@@ -10,8 +9,8 @@
         4.2 Form
         4.3 Footer
     5. Media Queries
- */
-////////////////////////*/
+ *!
+///////////////////////!*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
@@ -273,7 +272,7 @@ button[type="submit"]:hover {
 @media (max-width: 480px) {
     body {
         /*background: url("../assets/beach-background-mobile.jpg") no-repeat center center/cover; !* Optioneel: aangepaste mobiele achtergrond *!*/
-        align-items: flex-start; /* Content bovenaan op kleine schermen */
+        align-items: center; /* Content bovenaan op kleine schermen */
         padding-top: 40px;
     }
 
