@@ -245,6 +245,21 @@ button[type="submit"]:hover {
     font-size: 0.9rem;
 }
 
+.footer-link {
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    color: var(--color-text-white);
+}
+
+.footer-link:visited {
+    color: var(--color-text-white);
+}
+
+.footer-link:active {
+    color: var(--color-bg-1);
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
