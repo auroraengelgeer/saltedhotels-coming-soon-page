@@ -160,6 +160,16 @@ h1 {
 
 /* --------------- 4.2 Form --------------------------- */
 
+@keyframes fadeInDelayedForm {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .form {
     animation: fadeInDelayedForm 1.5s ease-out forwards;
@@ -171,16 +181,6 @@ h1 {
     margin-right: auto;
 }
 
-@keyframes fadeInDelayedForm {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 label {
     display: block;
